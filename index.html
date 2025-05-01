@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<title>Resume Debanshu Ganguly</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/ff2d20571b.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+window.onload=function(){
+<!--	// Define the API endpoint URL -->
+	const apiUrl = 'https://kurg4hx7ia.execute-api.ap-south-1.amazonaws.com/shop_online/resume';
+
+// Function to make the API call when the text is clicked
+
+<!--	function getResume()  { -->
+            fetch(apiUrl, {
+                method: 'GET',
+                mode: 'cors', // Specify CORS mode
+            })
+                .then(response => {
+                	console.log('response.status: ' + response.status);
+                    if (response.ok) {
+                         return response.text(); // Assumes the API returns a text response
+                    } else {
+                        throw new Error('HTTP error: ' + response.text + ' status ' + response.status + ' statusText '
+                        + response.statusText + ' url ' + response.url);
+                    }
+                })
+                .then(data => {
+                    // Handle the API response data here
+                    console.log('API response: ' + data);
+                    document.getElementById("a_fetch_resume").href = data
+                })
+                .catch(error => {
+                    console.error('API request failed:', error.message);
+                });
+<!--        };-->
+
+	document.getElementById('getResume').addEventListener('click', getResume);
+}
+</script>
+
+
+ 
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+
+
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:3000px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container w3-text-grey">
+		<!-- <img src="d.jpg" style="width:100%" alt="Avatar"> -->
+          <h2>&nbsp;&nbsp;Debanshu Ganguly</h2>
+          <!-- <div class="w3-display-bottomleft w3-container w3-text-white"> 
+            <h2>Debanshu Ganguly</h2>
+          </div>-->
+        </div>
+        <div class="w3-container">
+		  <p id="getResume" >
+			<a id="a_fetch_resume" href="#">
+				<i class="fa-solid fa-download fa-fw w3-margin-right w3-large w3-text-teal" style="font-size:48px;"></i>Download Résumé!!
+			</a>
+		  </p> 
+		  
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Senior Consultant @ 
+			<a href="https://www.capgemini.com/in-en/about-us/who-we-are/capgemini-technology-services-india-limited-formerly-known-as-igate-global-solutions-limited/">	
+			<img class="XNo5Ab" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADT0lEQVR4AcWXY3jkUBSGp7aNtW3btm3bLNZb27YHScdT2/Zgbdt3k/6ocdtmnv74xpP3Tc55cs8lLTq9vEuZaMEZr32Vdm5DQLpRZ/7fJfjwe5yFcucpH0inY4DMOfJPQ1O67xLHtH5iF3Bk1Mj1NGfelT5L/ovDGwYXMTKJtdvgkasmFoHR99lTVS5SS3BYW1G8SH024j5rFWECWzxytfWux3pKnSH/wwEwkTxDBoYmsU7mkaWynRYAAEgMusXao3Ce+roJADoaV5DE+fe5ah0WmOmU1EfrChIHA4GQKNrgna4JLTDwJmMn1uGfoACQUb9MSzP3S5BvUwCvV08zupcEgeCGMTShe7UqcNAjV1HrKsIhHtywMWPAyPvsFc0E8DPXvoryxAivi/JFWk1kaalsIwHsLuZMCAAyA28zd9UJjLHgzJM8Tf4nDpD0ZRQoWiUDRft0oGidDGRNmLWfa15BUusEsLrniAOuZJcGNCOrgWZUTaOoeeUDmQvUv6dCM/VI8x2Txoij41WcMnFYq1F1ywFD7rJXk4xN6JeJhivcT6gDtZX+NkmXSFgtvImuuWZ4FZSAYVCJOUn1MuJHpABe31oAjEBMjTlJ8yrqQxRc/jYPGo5nJCI4SlgPSJ6jAI2Qcmi4TjT/39qUh31Jy52Tx0oQ3fUQGUATRjW4D6DpXYHLmXNqD6oXw/8HAzci859uTn1kWCcw0oI7GZt0/nQGLnUJARqhFbUHNqbwP46lP7DVagPekyKomc99MKTZYtT/JuNqR+H4RNw7uPRhQ8B09sPlkxnCFX2oglTdaP4f/DPd6BrQmyqoGIYILh3MfabY6nLc9ybDFHbmU7pIFc3zylxgEMP/3lDAmMwXLGTzdfHjIc+eKZoXPO8dKXinBj0T4gsTNrkUtQaWPU/5qm9Ct9nmmKk6CBEGtVLjJ2NR4YE7ua8NOjUV44PodGvudMPrqJn2NTRY9xoarXMNdRh4m7Vjt1+BukcukBmMihwgmu3N2oSH8wnbF1zJf64zli7a3YsiKGsLrI+VZRAqctvCE+oRujEZRxdd6Yld3iZdjjcZ3t2P+1KFUSMR4f596Y81xbo1O5P+2GgqXTR6NJYN8U8HtdVk8ALdlG4X+A8UqTPP16W0AwAAAABJRU5ErkJggg==" style="height:18px;width:18px" alt="" data-atf="5" data-frt="0"> 
+			</a>
+		  </p>
+		  <p><i class="fa fa-building-o fa-fw w3-margin-right w3-large w3-text-teal" style="font-size:48px;"></i>Pune Maharashtra India</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Vadodara Gujarat India</p>
+          <p><a href="mailto:gangulyanshu@gmail.com" target="_top">
+				<i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>gangulyanshu[at]gmail.com
+				</a></p>
+          <!-- <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p> -->
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>
+			<ul>
+				<li> Programming Languages: 
+						<i title="Java 8,11" class="fa-brands fa-java" style="color: #7d7f82; font-size:26px"></i>,
+						<i title="Python 3" class="fa-brands fa-python" style="color: #7d7f82; font-size:20px"></i>,
+						<i title="JavaScript"  class="fa-brands fa-js" style="color: #7d7f82; font-size:20px"></i> <br>
+					</li>
+			  <li> Development Tools: IntelliJ IDEA, Eclipse, Squirrel SQL Client, Oracle SQL developer <br></li>
+			  <li> Operating Systems: <i class="fa fa-linux" style="font-size:20px"></i> LINUX and <i class="fa fa-windows" style="font-size:20px"></i> Windows <br></li>
+			  <li> DBMS: MY-SQL / SQL /SQLPLUS  <br></li>
+			  <li> Web Application Servers: Tomcat 8 <br></li>
+			  <li> vcs: <i class="fa fa-git" style="font-size:20px"></i> 
+						<i class="fa fa-github-alt" style="font-size:24px"></i> 
+						<i class="fa-brands fa-square-gitlab" style="color: #7d7f82; font-size:20px"></i>
+			  </li>
+			  <!-- <li> AWS: <i class="fa-brands fa-aws" style="color: #4e511f;"></i></li> -->
+			  <li><i class="fa-solid fa-cloud" style="color: #7d7f82; font-size:20px"></i> &nbsp;&nbsp;<i class="fa-brands fa-aws" style="color: #7d7f82; font-size:20px"></i> </li>
+		  </ul>
+		  </p>
+        		  
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:84%"></div>
+          </div>
+          <p>বাংলা (Bangla)</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:71%"></div>
+          </div>
+          <p> हिंदी (Hindi)</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:79%"></div>
+          </div>
+          
+		  <p>ગુજરાતી  (Gujarati)</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:65%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+	<!-- <span class="w3-tag w3-teal w3-round">Current</span> -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+		
+		<div class="w3-container">
+		  
+          <h5 class="w3-opacity"><b>Capgemini Technology Services India Ltd - Senior Consultant</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2021 -&nbsp;&nbsp;<span class="w3-tag w3-teal w3-round">Current</span> </h6>
+			<p style="margin-left:0.5em"> Working with technology: - Python, PyTest, AWS, Terraform, Java 8, Spring, REST API <br>Tools:  IntelliJ IDEA, PyChram, Maven, Git, GitLab CI/CD</p>
+			<p style="margin-left:0.5em"> Project Description: Develop a robust infrastructure on Amazon Web Services (AWS) <br> that leverages the capabilities of Step Functions and Lambda. <br> This infrastructure will be implemented using the Python programming language <br> and is specifically designed to enhance the functionality of our existing 'Subrogation' project.</p>
+		  <p>
+			<ul>
+			 <li>Proactively liaise with stakeholders to capture and comprehend project requirements.</li>
+			 <li>Conduct a detailed analysis of specifications to ensure a deep understanding.</li>
+			 <li>Architect and execute modules in alignment with project goals.</li>
+			 <li>Provide pivotal guidance to the team, swiftly navigating through challenges or roadblocks.</li>
+			 <li>Champion team collaboration, contributing to informed decisions and shared goals.</li>
+			 <li>Develop and rigorously test modules to ensure optimal functionality.</li>
+			</ul>
+		  </p>	
+          <hr>
+        </div>
+		
+		
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>InfoDesk Pvt Ltd - Associate Software Developer</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>February 2020 - June 2021</h6>
+          <p style="margin-left:0.5em"> Worked with technology: - Java 8, Spring, Concurrency API, XML, XSD, XSL, REST API, Documentation, NewsML
+				G2 specification. Tools: JIRA, Maven, Git, Jenkins, JIRA, BitBucket.</p>
+		  <p>
+			<ul>
+			 <li>Develop, test, implement and monstly maintain software applications, R&D New API for Requestors.</li>
+			 <li>Identified information/meta-data to be mapped to NewsML G2 specification.</li>
+			 <li>Wrote XSL transformations, fixed, optimized XSL.</li>
+			 <li>Contribute in Java based application development (Requestors semi Spring, Spring-Boot based).</li>
+			 <li>Help maintaining code quality, code organization when needed provided developer level support on production
+				issue.</li>
+			 <li>Communicating with the team and understanding the requirement or blockage for the implementation of the plan
+				and provide solution.</li>
+			 <li>Understanding and analysing the requirements specification.</li>
+			 <li>Improve designed and developed flow of the modules.</li>
+			</ul>
+		  </p>	
+          <hr>
+        </div>	
+		
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>JalHar Solutions - Software Developer</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2018 - January 2020</h6>
+          <p style="margin-left:0.5em">Worked with technology: - JSF Primefaces (Front-End), Java 8, Java EE (JPA, JSF, EJB, CDI) Wild-fly server</p>
+		  <p>
+			<ul>
+			 <li>Assisting in the development of the application of the production modules.</li>
+			 <li>Providing assistance in project development, developing Back-End and Front-End independently when required
+				also with team.</li>
+			 <li>Communicating with the Customer and understanding the requirement for the implementation of the plan.</li>
+			 <li>Understanding and analysing the requirements specification.</li>
+			 <li>Designed and developed flow of the modules.</li>
+			 <li>Wrote Controllers, Services, DAO, models etc. as per the flow analysis and requirment.</li>
+			 <li>UI development and wrote Business logic using Core Java 8 and J2EE (JSF, EJB, CDI).</li>
+			</ul>
+		  </p>
+          <hr>
+        </div>		
+
+	   <div class="w3-container">
+          <h5 class="w3-opacity"><b>Zensoftech Pvt Ltd - Application Programmer</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2016 - December 2018</h6>
+          <p>
+			<ul>
+			 <li>Assisting in project development, Coding Front-End and Back-End.</li>
+			 <li>Assisting in the application development of the production modules.</li>
+			 <li>Communicating with the Customer and supporting in the implementation of the plan including debugging.</li>
+			 <li>Delivering technical support to the Customer.</li>
+			 <li>Developing Java based GUI application using industry standard tools.</li>
+			 <li>Work with clients/users to gather user requirements and developing software  specifications.</li>
+			 <li>Actively participate in the architecture, design and testing of new software products.</li>
+			 <li>Working closely with other team members on planning, development and testing  activities.</li>
+			 <li>To take professional responsibility for project and delivery deadlines and milestones as  defined, and work with other team members to achieve these goals.</li>
+			 <li>Prepare and deliver written and/or verbal status report.</li>
+			 <li>Stay abreast of the industry, emerging technologies and tools which may benefit him and the company.</li>
+			 <li>Installation, maintenance and administration of the internal network and servers.</li>
+			 <li>Assist other less experienced employees in developing skills and techniques which  benefit them personally along with the company.</li>
+	   </ul>
+		  </p>
+          <hr>
+        </div>
+		
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Scan-O-Plan Systems (India) - Service Engineer </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2015 - February 2016</h6>
+          <p>	
+			<ul>	
+				<li>Providing assistance in radiation protection measures, equipment calibrations and performance of radiation quality
+					management and quality assurance practices.</li>
+				<li>Designing treatment plan and performing calculations with mathematical accuracy for the delivery of radiation
+					treatment based on the prescribed course of therapy.</li>
+				<li>Supervising the planning and implementation of the fabrication of compensation filters, custom shields, wedges,
+					and other beam modifying devices.</li>
+				<li>Assisting in the application of the production of moulds, casts and other immobilization devices.</li>
+				<li>Communicating with the therapist(s) and supporting in the implementation of the treatment plan including the
+					correct use of immobilization devices, compensators, wedges, field arrangement and other treatment/parameters.</li>
+				<li>Delivering technical support to the Medical Physicist in radiation safety & protection, qualitative machine
+					calibrations, quality assurance of treatment plans and radiation oncology equipment.</li>
+			</ul>	
+				</p>
+          <hr>
+        </div>
+    
+      </div>
+	  
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Computer Science and Engineering</b></h5>
+          <!-- <h6 class="w3-opacity"><b>Pacific University</b></h6> -->
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2014</h6>
+          <p style="margin-left:0.5em"> Bachelor of Technology(B.Tech) </p>
+          <hr>
+        </div>
+       
+      </div>	  
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Certifications</h2>
+        
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Agile Software Development</b></h5>
+          <h6 class="w3-opacity"><b>University of Minnesota</b></h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Issued Sep 2022</h6>
+           <p class="w3-text-teal" style="margin-left:0.5em"> Credential ID <a class="w3-text-teal" href="https://www.coursera.org/account/accomplishments/verify/ZQYKRSUW3TJS"> ZQYKRSUW3TJS </a></p>
+          <hr>
+        </div>
+		
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>Introduction Information of Security - I</b></h5>
+          <h6 class="w3-opacity"><b>Indian Institute of Technology, Madras</b></h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Issued Apr 2015</h6>
+           <!-- <p class="w3-text-teal" style="margin-left:0.5em"> Credential ID <a class="w3-text-teal" href="https://www.coursera.org/account/accomplishments/verify/ZQYKRSUW3TJS"> ZQYKRSUW3TJS </a></p> -->
+          <hr>
+        </div>
+       
+      </div>	  
+	 
+	 <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+      
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>OTT Application - Software Developer</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 2020 - January 2021</h6>
+          <p style="margin-left:0.5em"> Implemented technology: Java 11 LTS, Functional API, Spring 5, Spring Boot 2, Swagger, REST API, Containers,
+			Junit-5, JPA, mapstruct.</p>
+		  <p>
+			<ul>
+			 <li>Assisted in the development of the OTT application production modules.</li>
+			 <li>Developed REST end points API with Entity/Model, Service Layer, Repository, Controllers(Swagger - Interface),
+				openapi-Contract, Unit-Test Cases, IT-Test Cases.</li>
+			 <li>REST Endpoints: RegisterUser, ForgotPassword, AssetManagement, AssetVoting.</li>
+			 <li>Using following technology: Java 11, spring-boot v2.3.5.RELEASE, mysql v8.0.22, Spring-security v5.3.5, openapi
+				-v4.3.1, flyway -v6.5.0, maven-surefire, mapstruct v1.4.1, Testcontainers junit-jupiter v1.15.0 (mariadb Jclient).</li>
+			 <li>In project development, developed endpoints REST API independently when required also with team.</li>
+			 <li>Communicating with the stakeholder and understanding the requirement for the implementation of the plan.</li>
+			 <li>Understanding and analysing the requirements specification.</li>
+			 <li>Designed and developed modules.</li>
+		</ul>
+		  </p>
+          <hr>
+        </div>
+		
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>ReadingsToCertificate</b></h5>
+        
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2017 - April 2017 </h6>
+          <p style="margin-left:0.5em" >Developed a Software to generate Calibration Certificates based on Microscope readings for Sieves.  </p>
+          <hr>
+        </div>
+        		
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>Weekly Timesheet Management </b></h5>
+        
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2016 - December 2018</span></h6>
+          <p>
+		  <ul>
+			<li>Maintaining the system developed by Zensoftech Pvt Ltd.</li>
+			<li>The system is a web application for the intranet.</li>
+			<li>Developed using Java 8 with Tomcat 8 as the web server.</li>
+			<li>The system has provision of generating all the reports required by the client.</li>
+			<li>Developed reports using Apache POI API.</li>
+			<li>Only 2 major changes done during the past 3 years.</li>
+			<li>The changes mainly due to new kinds of reports as per clients requirements. </li>
+		</ul>
+			</p>
+          <hr>
+        </div>
+			
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>Haver ERP - Maintenance</b></h5>
+         
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2016 - December 2018</span></h6>
+          <p style="margin-left:0.5em" >	
+				Maintaining the ERP system.
+				The system was developed using Spring and Hibernate.
+				Fixing of bugs and reports is the major activity here. </p>
+          <hr>
+        </div>
+       
+      </div>	
+	 
+   <!-- End Right Column -->
+    </div>
+    	
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <a href="https://twitter.com/DebanshuG26"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/debanshuganguly"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <a href="https://kurg4hx7ia.execute-api.ap-south-1.amazonaws.com/shop_online/shop"><i class="fa fa-spinner fa-pulse w3 w3-hover-opacity"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+</footer>
+
+</body>
+</html>
